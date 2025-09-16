@@ -1,0 +1,350 @@
+[
+  {
+    "model": "gpt2",
+    "category": "Small & Fast",
+    "description": "Basic GPT-2 model",
+    "results": [
+      {
+        "success": false,
+        "scenario": "Sudan Crisis Assessment",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Economic Impact Analysis",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Climate Emergency Response",
+        "error": 404,
+        "details": "Not Found"
+      }
+    ],
+    "averageScore": 0,
+    "successfulTests": 0,
+    "totalTests": 3,
+    "status": "FAILED"
+  },
+  {
+    "model": "distilgpt2",
+    "category": "Small & Fast",
+    "description": "Distilled GPT-2, faster",
+    "results": [
+      {
+        "success": false,
+        "scenario": "Sudan Crisis Assessment",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Economic Impact Analysis",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Climate Emergency Response",
+        "error": 404,
+        "details": "Not Found"
+      }
+    ],
+    "averageScore": 0,
+    "successfulTests": 0,
+    "totalTests": 3,
+    "status": "FAILED"
+  },
+  {
+    "model": "microsoft/DialoGPT-small",
+    "category": "Conversational",
+    "description": "Small conversational model",
+    "results": [
+      {
+        "success": false,
+        "scenario": "Sudan Crisis Assessment",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Economic Impact Analysis",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Climate Emergency Response",
+        "error": 404,
+        "details": "Not Found"
+      }
+    ],
+    "averageScore": 0,
+    "successfulTests": 0,
+    "totalTests": 3,
+    "status": "FAILED"
+  },
+  {
+    "model": "gpt2-medium",
+    "category": "Medium Performance",
+    "description": "Medium GPT-2 model",
+    "results": [
+      {
+        "success": false,
+        "scenario": "Sudan Crisis Assessment",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Economic Impact Analysis",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Climate Emergency Response",
+        "error": 404,
+        "details": "Not Found"
+      }
+    ],
+    "averageScore": 0,
+    "successfulTests": 0,
+    "totalTests": 3,
+    "status": "FAILED"
+  },
+  {
+    "model": "microsoft/DialoGPT-medium",
+    "category": "Conversational",
+    "description": "Medium conversational model",
+    "results": [
+      {
+        "success": false,
+        "scenario": "Sudan Crisis Assessment",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Economic Impact Analysis",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Climate Emergency Response",
+        "error": 404,
+        "details": "Not Found"
+      }
+    ],
+    "averageScore": 0,
+    "successfulTests": 0,
+    "totalTests": 3,
+    "status": "FAILED"
+  },
+  {
+    "model": "EleutherAI/gpt-neo-1.3B",
+    "category": "Medium Performance",
+    "description": "GPT-Neo 1.3B parameters",
+    "results": [
+      {
+        "success": false,
+        "scenario": "Sudan Crisis Assessment",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Economic Impact Analysis",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Climate Emergency Response",
+        "error": 404,
+        "details": "Not Found"
+      }
+    ],
+    "averageScore": 0,
+    "successfulTests": 0,
+    "totalTests": 3,
+    "status": "FAILED"
+  },
+  {
+    "model": "microsoft/DialoGPT-large",
+    "category": "High Performance",
+    "description": "Large conversational model",
+    "results": [
+      {
+        "success": false,
+        "scenario": "Sudan Crisis Assessment",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Economic Impact Analysis",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Climate Emergency Response",
+        "error": 404,
+        "details": "Not Found"
+      }
+    ],
+    "averageScore": 0,
+    "successfulTests": 0,
+    "totalTests": 3,
+    "status": "FAILED"
+  },
+  {
+    "model": "EleutherAI/gpt-neo-2.7B",
+    "category": "High Performance",
+    "description": "GPT-Neo 2.7B parameters",
+    "results": [
+      {
+        "success": false,
+        "scenario": "Sudan Crisis Assessment",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Economic Impact Analysis",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Climate Emergency Response",
+        "error": 404,
+        "details": "Not Found"
+      }
+    ],
+    "averageScore": 0,
+    "successfulTests": 0,
+    "totalTests": 3,
+    "status": "FAILED"
+  },
+  {
+    "model": "google/flan-t5-base",
+    "category": "Instruction-Following",
+    "description": "FLAN-T5 instruction model",
+    "results": [
+      {
+        "success": false,
+        "scenario": "Sudan Crisis Assessment",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Economic Impact Analysis",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Climate Emergency Response",
+        "error": 404,
+        "details": "Not Found"
+      }
+    ],
+    "averageScore": 0,
+    "successfulTests": 0,
+    "totalTests": 3,
+    "status": "FAILED"
+  },
+  {
+    "model": "google/flan-t5-large",
+    "category": "Instruction-Following",
+    "description": "Large FLAN-T5 model",
+    "results": [
+      {
+        "success": false,
+        "scenario": "Sudan Crisis Assessment",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Economic Impact Analysis",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Climate Emergency Response",
+        "error": 404,
+        "details": "Not Found"
+      }
+    ],
+    "averageScore": 0,
+    "successfulTests": 0,
+    "totalTests": 3,
+    "status": "FAILED"
+  },
+  {
+    "model": "facebook/blenderbot-400M-distill",
+    "category": "Conversational",
+    "description": "Facebook BlenderBot",
+    "results": [
+      {
+        "success": false,
+        "scenario": "Sudan Crisis Assessment",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Economic Impact Analysis",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Climate Emergency Response",
+        "error": 404,
+        "details": "Not Found"
+      }
+    ],
+    "averageScore": 0,
+    "successfulTests": 0,
+    "totalTests": 3,
+    "status": "FAILED"
+  },
+  {
+    "model": "microsoft/GODEL-v1_1-base-seq2seq",
+    "category": "Conversational",
+    "description": "Microsoft GODEL",
+    "results": [
+      {
+        "success": false,
+        "scenario": "Sudan Crisis Assessment",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Economic Impact Analysis",
+        "error": 404,
+        "details": "Not Found"
+      },
+      {
+        "success": false,
+        "scenario": "Climate Emergency Response",
+        "error": 404,
+        "details": "Not Found"
+      }
+    ],
+    "averageScore": 0,
+    "successfulTests": 0,
+    "totalTests": 3,
+    "status": "FAILED"
+  }
+]

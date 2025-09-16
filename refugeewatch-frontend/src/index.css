@@ -1,0 +1,256 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* RefugeeWatch AI Design System - Humanitarian Crisis Platform */
+
+@layer base {
+  :root {
+    /* Base colors - Light mode */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 215 25% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 25% 15%;
+
+    /* Humanitarian primary - Professional blue */
+    --primary: 214 84% 56%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Crisis levels - Color coded system */
+    --crisis-critical: 0 84% 60%;
+    --crisis-high: 25 95% 53%;
+    --crisis-medium: 45 100% 51%;
+    --crisis-low: 120 61% 50%;
+
+    /* UI semantics */
+    --secondary: 210 20% 95%;
+    --secondary-foreground: 215 25% 25%;
+
+    --muted: 210 20% 92%;
+    --muted-foreground: 215 16% 46%;
+
+    --accent: 214 32% 91%;
+    --accent-foreground: 215 25% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 214 31% 91%;
+    --input: 214 31% 91%;
+    --ring: 214 84% 56%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar styling */
+    --sidebar-background: 215 28% 17%;
+    --sidebar-foreground: 210 20% 85%;
+    --sidebar-primary: 214 84% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 25% 25%;
+    --sidebar-accent-foreground: 210 20% 85%;
+    --sidebar-border: 215 25% 25%;
+    --sidebar-ring: 214 84% 56%;
+
+    /* Gradients and effects */
+    --gradient-space: linear-gradient(135deg, hsl(215 28% 12%), hsl(220 28% 8%));
+    --gradient-humanitarian: linear-gradient(135deg, hsl(214 84% 56%), hsl(210 84% 48%));
+    --shadow-crisis: 0 4px 20px hsla(0, 84%, 60%, 0.3);
+    --shadow-elevated: 0 8px 32px hsla(215, 25%, 15%, 0.15);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --pulse-duration: 2s;
+  }
+
+  .dark {
+    /* Dark mode - Deep space-like theme */
+    --background: 215 28% 12%;
+    --foreground: 210 20% 92%;
+
+    --card: 215 25% 15%;
+    --card-foreground: 210 20% 92%;
+
+    --popover: 215 25% 15%;
+    --popover-foreground: 210 20% 92%;
+
+    --primary: 214 84% 56%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Crisis levels remain consistent */
+    --crisis-critical: 0 84% 60%;
+    --crisis-high: 25 95% 53%;
+    --crisis-medium: 45 100% 51%;
+    --crisis-low: 120 61% 50%;
+
+    --secondary: 215 25% 20%;
+    --secondary-foreground: 210 20% 85%;
+
+    --muted: 215 25% 18%;
+    --muted-foreground: 215 16% 60%;
+
+    --accent: 215 25% 22%;
+    --accent-foreground: 210 20% 85%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 215 25% 22%;
+    --input: 215 25% 20%;
+    --ring: 214 84% 56%;
+
+    /* Dark sidebar */
+    --sidebar-background: 215 28% 8%;
+    --sidebar-foreground: 210 20% 85%;
+    --sidebar-primary: 214 84% 56%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 25% 15%;
+    --sidebar-accent-foreground: 210 20% 85%;
+    --sidebar-border: 215 25% 15%;
+    --sidebar-ring: 214 84% 56%;
+
+    /* Enhanced dark gradients */
+    --gradient-space: linear-gradient(135deg, hsl(215 28% 8%), hsl(220 28% 4%));
+    --gradient-humanitarian: linear-gradient(135deg, hsl(214 84% 56%), hsl(210 84% 48%));
+    --shadow-crisis: 0 4px 20px hsla(0, 84%, 60%, 0.4);
+    --shadow-elevated: 0 8px 32px hsla(215, 28%, 8%, 0.6);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Humanitarian Crisis Platform Components */
+@layer components {
+  .crisis-marker {
+    @apply rounded-full absolute transform -translate-x-1/2 -translate-y-1/2 cursor-pointer;
+    transition: var(--transition-smooth);
+  }
+  
+  .crisis-marker:hover {
+    transform: translate(-50%, -50%) scale(1.3);
+  }
+  
+  .crisis-critical {
+    @apply bg-red-500;
+    box-shadow: var(--shadow-crisis);
+    animation: pulse-critical var(--pulse-duration) infinite;
+  }
+  
+  .crisis-high {
+    background-color: hsl(var(--crisis-high));
+    animation: pulse-slow calc(var(--pulse-duration) * 1.5) infinite;
+  }
+  
+  .crisis-medium {
+    background-color: hsl(var(--crisis-medium));
+    animation: blink calc(var(--pulse-duration)) infinite;
+  }
+  
+  .crisis-low {
+    background-color: hsl(var(--crisis-low));
+  }
+  
+  .globe-container {
+    background: var(--gradient-space);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .humanitarian-gradient {
+    background: var(--gradient-humanitarian);
+  }
+  
+  .elevated-card {
+    box-shadow: var(--shadow-elevated);
+    transition: var(--transition-smooth);
+  }
+  
+  .elevated-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px hsla(215, 25%, 15%, 0.2);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.crisis-marker {
+  transition: transform 0.2s ease;
+}
+
+.crisis-marker:hover {
+  transform: scale(1.1);
+}
+@layer utilities {
+  .animate-pulse-critical {
+    animation: pulse-critical 1s infinite;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse-slow 3s infinite;
+  }
+  
+  .animate-blink {
+    animation: blink 2s infinite;
+  }
+  
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+}
+
+@keyframes pulse-critical {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes blink {
+  0%, 50% {
+    opacity: 1;
+  }
+  51%, 100% {
+    opacity: 0.3;
+  }
+}
