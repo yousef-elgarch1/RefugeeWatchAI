@@ -6,7 +6,7 @@
 const axios = require('axios');
 
 // Your API token
-const API_KEY = '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';
+const API_KEY = process.env.HUGGINGFACE_API_KEY || "your-api-key-here";
 const BASE_URL = 'https://router.huggingface.co/v1';
 
 // Working models for 2024/2025

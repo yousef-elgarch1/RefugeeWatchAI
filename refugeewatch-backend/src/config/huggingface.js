@@ -3,7 +3,7 @@ const logger = require('../utils/logger');
 
 // UPDATED CONFIGURATION BASED ON YOUR TEST RESULTS
 const HF_CONFIG = {
-  apiKey: process.env.HUGGINGFACE_API_KEY || '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',
+  apiKey: process.env.HUGGINGFACE_API_KEY ,
   baseURL: 'https://router.huggingface.co/v1',
   
   // PRIMARY MODEL: Winner from your tests

@@ -11,7 +11,7 @@ const fs = require('fs');
 
 // Your working configuration
 const CONFIG = {
-  API_KEY: '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',
+  API_KEY = process.env.HUGGINGFACE_API_KEY || "your-api-key-here",
   BASE_URL: 'https://router.huggingface.co/v1',
   MODELS: [
     'meta-llama/Llama-3.3-70B-Instruct',
